@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
-class RencanaStudyViewModel : ViewModel() {
+class RencanaStudyViewModel : ViewModel() { //menyimpan dan memperbarui data mata kuliah dan kelas
     private val _krsState = MutableStateFlow(RencanaStudy())
     val krsStateUi: StateFlow<RencanaStudy> = _krsState.asStateFlow()
 
