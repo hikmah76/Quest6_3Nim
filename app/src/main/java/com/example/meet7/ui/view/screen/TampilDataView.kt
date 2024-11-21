@@ -45,7 +45,7 @@ fun TampilDataView(
             isinya = rencanaStudy.namaMK
         )
         TampilData(
-            judul = "Kelas",
+            judul = "Kelas", //untuk menampilkan data kelas mahasiswa
             isinya = rencanaStudy.kelas
         )
     }
