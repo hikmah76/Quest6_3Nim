@@ -42,7 +42,7 @@ fun Navigasi( // data disimpan sebelum navigasi
         composable(route = Halaman.Splash.name) {
             SplashView(onMulaiButton = {
                 navController.navigate(Halaman.Mahasiswa.name)
-            })
+            }) // mengirim data mahasiswa
         }
         composable(route = Halaman.Mahasiswa.name) {
             MahasiswaFormView(
