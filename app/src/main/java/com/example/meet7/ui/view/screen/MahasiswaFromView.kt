@@ -174,7 +174,7 @@ fun MahasiswaFormView(
                         listData.addAll(listOf(nim, nama, email))
                         onSumbitButtonClicked(listData)
                     }) {
-                        Text(text = "Simpan")
+                        Text(text = "Simpan") //button untuk kembali dan menyimpan data
                     }
                 }
             }
