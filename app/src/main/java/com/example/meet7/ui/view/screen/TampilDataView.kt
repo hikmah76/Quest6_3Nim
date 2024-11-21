@@ -28,7 +28,7 @@ fun TampilDataView(
         )
         TampilData(
             judul = "Nama",
-            isinya = mahasiswa.nama
+            isinya = mahasiswa.nama // untuk menampilkan data nama mahasiswa
         )
         TampilData(
             judul = "Email",
