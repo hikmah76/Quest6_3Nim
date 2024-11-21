@@ -32,7 +32,7 @@ fun TampilDataView(
         )
         TampilData(
             judul = "Email",
-            isinya = mahasiswa.email
+            isinya = mahasiswa.email //untuk menampilkan data email mahasiswa
         )
 
         Spacer(modifier = Modifier.height(32.dp))
