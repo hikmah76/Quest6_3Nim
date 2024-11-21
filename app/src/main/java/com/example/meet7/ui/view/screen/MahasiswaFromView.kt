@@ -96,7 +96,7 @@ fun MahasiswaFormView(
                     .fillMaxSize()
                     .padding(16.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
-            ) {
+            ) { //bagian untuk memasukkan data
                 Text(
                     text = "Masukkan Data kamu",
                     fontWeight = FontWeight.Bold,
