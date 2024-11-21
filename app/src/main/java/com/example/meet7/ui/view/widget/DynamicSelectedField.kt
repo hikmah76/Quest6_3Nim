@@ -31,7 +31,7 @@ fun DynamicSelectTextField(
         onExpandedChange = { expanded = !expanded},
         modifier = modifier
     ) {
-        OutlinedTextField(
+        OutlinedTextField( //dropdown dengan ikon dan label
             readOnly = true,
             value = selectValue,
             onValueChange = {},
