@@ -48,7 +48,7 @@ fun MahasiswaFormView(
 ) {
     var nama by remember { mutableStateOf("") }
     var nim by remember { mutableStateOf("") }
-    var email by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") } //untuk penyimpanan data input
 
     val listData: MutableList<String> = mutableListOf(nim, nama, email)
 
