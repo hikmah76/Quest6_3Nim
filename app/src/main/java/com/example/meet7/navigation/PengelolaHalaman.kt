@@ -45,7 +45,7 @@ fun MahasiswaApp(
                 navController.navigate(Halaman.Mahasiswa.name)
             })
         }
-        composable(route = Halaman.Mahasiswa.name) {
+        composable(route = Halaman.Mahasiswa.name) { // halaman informasi mahasiswa
             MahasiswaFormView(
                 onSumbitButtonClicked = {
                     mahasiswaViewModel.saveDataMahasiswa(it)
