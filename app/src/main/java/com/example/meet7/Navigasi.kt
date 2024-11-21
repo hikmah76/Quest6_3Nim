@@ -53,7 +53,7 @@ fun Navigasi( // data disimpan sebelum navigasi
                 onBackButtonCliked = {
                     navController.popBackStack()
                 }
-            )
+            ) //Mengirim data matakuliah
         }
         composable(route = Halaman.Matakuliah.name) {
             RencanaStudyView(
