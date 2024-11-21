@@ -41,7 +41,7 @@ fun TampilDataView(
         Spacer(modifier = Modifier.height(16.dp))
 
         TampilData(
-            judul = "Mata Kuliah",
+            judul = "Mata Kuliah",  //untuk menampilkan data pilihan matakulihan mahasiswa
             isinya = rencanaStudy.namaMK
         )
         TampilData(
