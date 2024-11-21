@@ -25,7 +25,7 @@ enum class Halaman {
 }
 
 @Composable
-fun Navigasi(
+fun Navigasi( // data disimpan sebelum navigasi
     modifier: Modifier = Modifier,
     mahasiswaViewModel: MahasiswaViewModel = viewModel(),
     krsViewModel: RencanaStudyViewModel = viewModel(),
