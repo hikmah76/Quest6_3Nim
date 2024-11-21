@@ -64,7 +64,7 @@ fun Navigasi( // data disimpan sebelum navigasi
                 },
                 onBackButtonClicked = {
                     navController.popBackStack()
-                }
+                }//simpan data ke halaman tampil data
             )
         }
         composable(route = Halaman.TampilData.name) {
