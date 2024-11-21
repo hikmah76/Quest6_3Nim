@@ -19,33 +19,33 @@ import com.example.meet7.ui.view.screen.RencanaStudyView
 
 
 
-enum class Halaman{
+enum class Halaman {
     Splash,
     Mahasiswa,
     Matakuliah,
     Tampil
 }
+
 @Composable
 fun MahasiswaApp(
     modifier: Modifier = Modifier,
     mahasiswaViewModel: MahasiswaViewModel = viewModel(),
     krsViewModel: RencanaStudyViewModel = viewModel(),
     navController: NavHostController = rememberNavController()
-){
-  val mahasiswaUiState = mahasiswaViewModel.mahasiswaUiState.collectAsState().value
+) {
+    val mahasiswaUiState = mahasiswaViewModel.mahasiswaUiState.collectAsState().value
 
-    NavHost(
+    NavHost( //tata letak elemen NavHost
         navController = navController,
         startDestination = Halaman.Splash.name,
         modifier = modifier.padding()
     ) {
         composable(route = Halaman.Splash.name) {
-            SplashView (onMulaiButton = {
+            SplashView(onMulaiButton = {
                 navController.navigate(Halaman.Mahasiswa.name)
             })
-
         }
-        composable(route = Halaman.Mahasiswa.name){
+        composable(route = Halaman.Mahasiswa.name) {
             MahasiswaFormView(
                 onSumbitButtonClicked = {
                     mahasiswaViewModel.saveDataMahasiswa(it)
@@ -56,10 +56,11 @@ fun MahasiswaApp(
                 }
             )
         }
-        composable(route = Halaman.Matakuliah.name){
-            RencanaStudyView(mahasiswa = mahasiswaUiState,
-                onSumbmitButtonClicked = {krsViewModel.saveDataKRS(it)},
-                onBackButtonClicked = {navController.popBackStack()}
+        composable(route = Halaman.Matakuliah.name) {
+            RencanaStudyView(
+                mahasiswa = mahasiswaUiState,
+                onSumbmitButtonClicked = { krsViewModel.saveDataKRS(it) },
+                onBackButtonClicked = { navController.popBackStack() }
             )
         }
     }
