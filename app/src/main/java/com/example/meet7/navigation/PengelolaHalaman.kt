@@ -56,7 +56,7 @@ fun MahasiswaApp(
                 }
             )
         }
-        composable(route = Halaman.Matakuliah.name) {
+        composable(route = Halaman.Matakuliah.name) { //halaman informasi matakuliah
             RencanaStudyView(
                 mahasiswa = mahasiswaUiState,
                 onSumbmitButtonClicked = { krsViewModel.saveDataKRS(it) },
