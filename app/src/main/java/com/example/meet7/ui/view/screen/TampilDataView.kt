@@ -24,7 +24,7 @@ fun TampilDataView(
 
         TampilData(
             judul = "NIM",
-            isinya = mahasiswa.nim
+            isinya = mahasiswa.nim // untuk menampilkan nim
         )
         TampilData(
             judul = "Nama",

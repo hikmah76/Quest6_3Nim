@@ -95,7 +95,7 @@ fun RencanaStudyView(
             }
         }
 
-        // Konten Utama
+
         Box(
             modifier = Modifier
                 .background(
@@ -175,7 +175,7 @@ fun RencanaStudyView(
                 }
                 Spacer(modifier = Modifier.padding(8.dp))
 
-                // Tombol Kembali dan Lanjut
+
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
